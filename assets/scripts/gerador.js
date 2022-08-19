@@ -51,6 +51,6 @@ function gerarNumerosMegaSena() {
   // numerosResultado.className = "alert alert-success";
 
   for (var result of exibir) {
-    resultado.innerHTML += (`<li><span>${result}</span></li>`);
+    resultado.innerHTML += (`<li><span>${String(result).padStart(2,"0")}</span></li>`);
   }
 }
